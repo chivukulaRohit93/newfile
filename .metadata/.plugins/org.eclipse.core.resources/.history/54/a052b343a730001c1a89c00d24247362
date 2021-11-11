@@ -1,0 +1,8 @@
+spring.datasource.password: 123
+spring.datasource.url: jdbc:sqlserver://LAPTOP-DH6TD26N\MSSQLSERVER01;databaseName=users
+spring.datasource.username: sa
+spring.datasource.driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+jpa.show-sql: true
+jpa.hibernate.dialect: org.hibernate.dialect.SQLServer2012Dialect
+jpa.ddl-auto: none
+server.port:8081

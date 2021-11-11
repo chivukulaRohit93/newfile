@@ -1,0 +1,58 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /multum
+
+spring:
+  #Database configuration
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://LAPTOP-DH6TD26N\\MSSQLSERVER01;databaseName=users
+    username: sa
+    password: 1234
+    testOnBorrow: true
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    connectionProperties: useUnicode=true;characterEncoding=utf-8;
+    platform: mssql
+    initialize: false
+    #Hikari Connection Pool configuration
+    hikari:
+      connectionTimeout: 60000
+      maximumPoolSize: 5
+  #JPA configuration
+  jpa:
+    database: mssql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        formatSql: true
+        useSqlComments: false
+        type: trace
+        enableLazyLoadNoTrans: true
+        id:
+          newGeneratorMappings: false
+    hibernate:
+      ddlAuto: none
+      naming:
+        implicitStrategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  #Mail Server configuration
+  mail:
+    host: smtp.isgit.com
+    port: 587
+    username: test@isgit.com
+    password: abcd@123
+    protocol: smtp
+    defaultEncoding: UTF-8
+    debug: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+            required: true

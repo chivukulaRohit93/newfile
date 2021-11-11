@@ -1,0 +1,40 @@
+package com.example.demo.model;
+
+public class login {
+	private int studentId;
+	private String studentName;
+	private String phone;
+	private String emailId;
+	public int getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	@Override
+	public String toString() {
+		return "login [studentId=" + studentId + ", studentName=" + studentName + ", phone=" + phone + ", emailId="
+				+ emailId + "]";
+	}
+	
+	
+	
+}

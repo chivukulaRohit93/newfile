@@ -1,0 +1,18 @@
+
+
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: 123
+    url: jdbc:sqlserver://LAPTOP-DH6TD26N\MSSQLSERVER01;databaseName=users
+    username: sa
+  jpa:
+    ddl-auto: none
+    show-sql: true
+    hibernate:
+     dialect: org.hibernate.dialect.SQLServer2012Dialect
+logging:
+  level:
+   com.example.demo: DEBUG

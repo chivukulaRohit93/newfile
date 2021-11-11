@@ -1,0 +1,17 @@
+package com.isgit.multum.mapper;
+
+import com.isgit.multum.entity.User;
+import com.isgit.multum.dto.UserDto;
+
+import java.util.List;
+
+import org.mapstruct.Mapper;
+
+/**
+ *
+ * @author Prabhaker Goli
+ */
+@Mapper(componentModel = "spring", uses = {})
+public interface UserMapper extends EntityMapper<UserDto, User> {
+	
+}

@@ -1,0 +1,41 @@
+package com.isgit.multum.mapper;
+
+import com.isgit.multum.entity.User;
+import com.isgit.multum.dto.UserDto;
+
+import java.util.List;
+
+import org.mapstruct.Mapper;
+
+/**
+ *
+ * @author Prabhaker Goli
+ */
+@Mapper(componentModel = "spring", uses = {})
+public class UserMapper implements EntityMapper<UserDto, User> {
+
+	@Override
+	public User toEntity(UserDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto toDto(User entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> toEntity(List<UserDto> dtoList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> toDto(List<User> entityList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
